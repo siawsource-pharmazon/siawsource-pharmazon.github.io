@@ -2,6 +2,7 @@
   "name": "pharmazon-email-function",
   "version": "1.0.0",
   "dependencies": {
-    "@sendgrid/mail": "^7.8.0"
+    "resend": "^3.0.0"
   }
 }
+
