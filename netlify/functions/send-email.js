@@ -16,8 +16,8 @@ exports.handler = async function (event) {
       return { statusCode: 400, body: JSON.stringify({ error: 'Missing base64 file data' }) };
     }
 
-    const from = process.env.FROM_EMAIL || 'onboarding@resend.dev';
-    const to = process.env.TO_EMAIL || 'pharmazonlimited@gmail.com';
+    const from = 'onboarding@resend.dev';
+    const to = 'pharmazonlimited@gmail.com';
 
     const response = await resend.emails.send({
       from,
